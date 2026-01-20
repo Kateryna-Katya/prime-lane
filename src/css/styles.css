@@ -1216,3 +1216,36 @@ section:nth-child(even) {
       padding: 120px 0 60px;
   }
 }
+/* --- LEGAL PAGES STYLES (Оптимизация под Mobile) --- */
+.pages {
+  /* На мобильных хедер меньше, поэтому уменьшаем отступ */
+  padding: 120px 0 60px;
+  min-height: 80vh;
+  line-height: 1.7;
+}
+
+@media (min-width: 992px) {
+  .pages {
+      padding: 160px 0 100px;
+  }
+}
+
+.pages .container {
+  max-width: 800px; /* Сужаем для удобства чтения текста */
+  opacity: 1; /* По умолчанию виден, если нет reveal */
+}
+
+/* Оптимизация Reveal для текстовых страниц */
+.pages.reveal,
+.pages .reveal {
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: transform, opacity;
+}
+
+/* Фикс для предотвращения "пустого экрана" при загрузке на мобильных */
+@media (max-width: 768px) {
+  .reveal {
+      /* Делаем появление менее агрессивным на мобильных */
+      transform: translateY(15px);
+  }
+}
