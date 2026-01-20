@@ -1,56 +1,467 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/prime-lane/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime-Lane | Консалтинг нового поколения</title>
+    <meta name="description" content="Экспертные решения и стратегии для вашего бизнеса в Европе.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230056FF'/%3E%3Cpath d='M10 22L16 16L22 22M10 16L16 10L22 16' stroke='white' stroke-width='2.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
     <script type="module" crossorigin src="/prime-lane/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/prime-lane/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/prime-lane/assets/styles-D_hF_zvC.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
+  <div class="container header__container">
+      <a href="/" class="logo">
+          Prime<span>Lane</span>
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+
+      <nav class="nav">
+          <ul class="nav__list">
+              <li><a href="#" class="nav__link">Главная</a></li>
+              <li><a href="#strategy" class="nav__link">Стратегия</a></li>
+              <li><a href="#analytics" class="nav__link">Аналитика</a></li>
+              <li><a href="#expertise" class="nav__link">Экспертиза</a></li>
+              <li><a href="#blog" class="nav__link">Блог</a></li>
+              <li><a href="#cases" class="nav__link">Кейсы</a></li>
+          </ul>
+      </nav>
+
+      <div class="header__actions">
+          <a href="#contact" class="btn btn--primary">Начать</a>
+          <button class="burger" aria-label="Menu">
+              <span></span>
+          </button>
+      </div>
   </div>
 </header>
-
+<div class="mobile-menu" id="mobile-menu">
+  <nav class="mobile-nav">
+      <ul class="mobile-nav__list">
+          <li><a href="#" class="mobile-nav__link">Главная</a></li>
+          <li><a href="#strategy" class="mobile-nav__link">Стратегия</a></li>
+          <li><a href="#analytics" class="mobile-nav__link">Аналитика</a></li>
+          <li><a href="#expertise" class="mobile-nav__link">Экспертиза</a></li>
+          <li><a href="#blog" class="mobile-nav__link">Блог</a></li>
+          <li><a href="#contact" class="mobile-nav__link">Контакты</a></li>
+      </ul>
+      <a href="#contact" class="btn btn--primary">Начать сейчас</a>
+  </nav>
+</div>
 
     <main>
       <!-- Loads the specified .html file -->
-      
+      <section class="hero" id="home">
+  <div class="container hero__container">
+      <div class="hero__content">
+          <span class="hero__subtitle">Платформа года в Европе</span>
+          <h1 class="hero__title">
+              <span class="line">Инновационная технология</span>
+              <span class="line">нового поколения</span>
+          </h1>
+          <p class="hero__text">
+              Переосмыслите подход к развитию. Мы создаем решения, которые меняют правила игры на рынке консалтинга Франции.
+          </p>
+          <div class="hero__actions">
+              <a href="#contact" class="btn btn--primary">Начать сейчас</a>
+              <a href="#strategy" class="btn btn--outline">Узнать детали</a>
+          </div>
+      </div>
+      <div class="hero__visual">
+          <div class="hero__blob"></div>
+      </div>
+  </div>
+</section>
+<section class="platform" id="strategy">
+  <div class="container platform__container">
+      <div class="platform__visual reveal">
+          <div class="platform__image-wrapper">
+              <img src="/prime-lane/assets/one-D1B7ubl3.jpg" alt="Digital Infrastructure" class="platform__img">
+              <div class="platform__stats-card">
+                  <span class="stats-card__value">AI</span>
+                  <p class="stats-card__text">Инструменты для реальных задач</p>
+              </div>
+          </div>
+      </div>
+
+      <div class="platform__content reveal">
+          <h2 class="section-title">Передовая цифровая инфраструктура</h2>
+          <p class="section-tagline">Решения, которые меняют правила игры</p>
+
+          <div class="platform__description">
+              <p>
+                  Prime-Lane — это платформа нового поколения, объединяющая классический консалтинг и передовые IT-решения. Мы помогаем проектам в странах ЕС не просто адаптироваться, а задавать тренды.
+              </p>
+              <p>
+                  Наша методология базируется на глубокой аналитике и <strong>стратегии роста на базе инноваций</strong>. Это путь, понятный каждому, кто стремится к масштабированию без лишних сложностей.
+              </p>
+          </div>
+
+          <ul class="platform__list">
+              <li class="platform__item">
+                  <i data-lucide="zap"></i>
+                  <span>Быстрый и лёгкий старт в Европе</span>
+              </li>
+              <li class="platform__item">
+                  <i data-lucide="shield-check"></i>
+                  <span>Проверенный партнер вашего бизнеса</span>
+              </li>
+              <li class="platform__item">
+                  <i data-lucide="trending-up"></i>
+                  <span>Практики, применимые уже сегодня</span>
+              </li>
+          </ul>
+
+          <div class="platform__cta">
+              <a href="#contact" class="btn btn--primary">Запросить доступ</a>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="features" id="analytics">
+  <div class="container">
+      <div class="features__header reveal">
+          <span class="section-tagline">Почему выбирают нас</span>
+          <h2 class="section-title">Методологии, доказавшие эффективность</h2>
+      </div>
+
+      <div class="features__grid">
+          <div class="feature-card reveal">
+              <div class="feature-card__icon">
+                  <i data-lucide="trending-up"></i>
+              </div>
+              <h3 class="feature-card__title">Технология для пассивного дохода</h3>
+              <p class="feature-card__text">
+                  Инновационные алгоритмы управления активами, обеспечивающие стабильный рост в долгосрочной перспективе.
+              </p>
+          </div>
+
+          <div class="feature-card reveal">
+              <div class="feature-card__icon">
+                  <i data-lucide="users"></i>
+              </div>
+              <h3 class="feature-card__title">Экспертная поддержка</h3>
+              <p class="feature-card__text">
+                  Сопровождение на всех этапах интеграции: от первичного аудита до полной адаптации под рынок Франции.
+              </p>
+          </div>
+
+          <div class="feature-card reveal">
+              <div class="feature-card__icon">
+                  <i data-lucide="globe"></i>
+              </div>
+              <h3 class="feature-card__title">Доступность в Европе</h3>
+              <p class="feature-card__text">
+                  Платформа уже доступна в странах ЕС, обеспечивая бесшовную работу в рамках европейского законодательства.
+              </p>
+          </div>
+
+          <div class="feature-card reveal">
+              <div class="feature-card__icon">
+                  <i data-lucide="cpu"></i>
+              </div>
+              <h3 class="feature-card__title">AI-инструменты</h3>
+              <p class="feature-card__text">
+                  Использование искусственного интеллекта для решения реальных бизнес-задач и автоматизации рутины.
+              </p>
+          </div>
+      </div>
+
+      <div class="features__footer reveal">
+          <p>Оцените перспективы вашего проекта уже сегодня</p>
+          <a href="#contact" class="btn btn--outline">Получить больше информации</a>
+      </div>
+  </div>
+</section>
+<section class="innovations" id="expertise">
+  <div class="container">
+      <div class="innovations__grid">
+          <div class="innovations__info reveal">
+              <span class="section-tagline">Будущее консалтинга</span>
+              <h2 class="section-title">Технологии, которые работают на вас</h2>
+              <p class="innovations__lead">
+                  Мы создаем не просто отчеты, а высокотехнологичную экосистему для принятия решений. Платформа года по версии технологических экспертов ЕС.
+              </p>
+
+              <div class="innovations__stats">
+                  <div class="stat-item">
+                      <span class="stat-item__number">01</span>
+                      <div class="stat-item__content">
+                          <h4>Платформа года</h4>
+                          <p>Признанное решение для бизнеса во Франции</p>
+                      </div>
+                  </div>
+                  <div class="stat-item">
+                      <span class="stat-item__number">02</span>
+                      <div class="stat-item__content">
+                          <h4>AI-инструменты</h4>
+                          <p>Автоматизация 70% рутинных процессов</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="innovations__cards reveal">
+              <div class="innovation-card accent">
+                  <div class="innovation-card__icon">
+                      <i data-lucide="layers"></i>
+                  </div>
+                  <h3>Передовая цифровая инфраструктура</h3>
+                  <p>Гибкая архитектура, готовая к любым вызовам современного рынка.</p>
+              </div>
+
+              <div class="innovation-card">
+                  <div class="innovation-card__icon">
+                      <i data-lucide="shield-check"></i>
+                  </div>
+                  <h3>Безопасность данных</h3>
+                  <p>Протоколы шифрования последнего поколения для защиты вашего актива.</p>
+              </div>
+
+              <div class="innovation-card">
+                  <div class="innovation-card__icon">
+                      <i data-lucide="refresh-cw"></i>
+                  </div>
+                  <h3>Удобная адаптация</h3>
+                  <p>Пошаговый путь, понятный каждому пользователю без спец. подготовки.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="blog" id="blog">
+  <div class="container">
+      <div class="blog__header reveal">
+          <div class="blog__header-content">
+              <span class="section-tagline">Инсайты и стратегии</span>
+              <h2 class="section-title">Постройте карьеру, которая работает на вас</h2>
+          </div>
+          <a href="#contact" class="blog__all-link">Все статьи <i data-lucide="arrow-right"></i></a>
+      </div>
+
+      <div class="blog__grid">
+          <article class="blog-card reveal">
+              <div class="blog-card__image">
+                  <img src="/prime-lane/assets/two-ViJUkk_U.jpg" alt="Strategy 2026">
+                  <span class="blog-card__category">Стратегия</span>
+              </div>
+              <div class="blog-card__content">
+                  <time class="blog-card__date">20 Января, 2026</time>
+                  <h3 class="blog-card__title">Как оценить перспективы проекта на европейском рынке</h3>
+                  <p class="blog-card__excerpt">Разбираем ключевые метрики и скрытые возможности для роста в условиях новой цифровой экономики.</p>
+                  <a href="#contact" class="blog-card__link">Читать далее</a>
+              </div>
+          </article>
+
+          <article class="blog-card reveal">
+              <div class="blog-card__image">
+                  <img src="/prime-lane/assets/three-CyPGi5TB.jpg" alt="Innovation">
+                  <span class="blog-card__category">Инновации</span>
+              </div>
+              <div class="blog-card__content">
+                  <time class="blog-card__date">15 Января, 2026</time>
+                  <h3 class="blog-card__title">Практики, применимые уже сегодня: AI в консалтинге</h3>
+                  <p class="blog-card__excerpt">Пошаговый путь внедрения нейросетей в бизнес-процессы для повышения личной эффективности.</p>
+                  <a href="#contact" class="blog-card__link">Читать далее</a>
+              </div>
+          </article>
+
+          <article class="blog-card reveal">
+              <div class="blog-card__image">
+                  <img src="/prime-lane/assets/four-C8xh_UWo.jpg" alt="Income">
+                  <span class="blog-card__category">Доход</span>
+              </div>
+              <div class="blog-card__content">
+                  <time class="blog-card__date">10 Января, 2026</time>
+                  <h3 class="blog-card__title">Программа пассивного дохода: мифы и реальность</h3>
+                  <p class="blog-card__excerpt">Откройте новые возможности для масштабирования вашего капитала через проверенные технологии.</p>
+                  <a href="#contact" class="blog-card__link">Читать далее</a>
+              </div>
+          </article>
+      </div>
+  </div>
+</section>
+<section class="roadmap" id="cases">
+  <div class="container">
+      <div class="roadmap__header reveal">
+          <span class="section-tagline">Алгоритм успеха</span>
+          <h2 class="section-title">Ваш путь к масштабированию в Европе</h2>
+          <p class="roadmap__intro">Мы переосмыслили подход к развитию, создав четкий и прозрачный процесс интеграции в цифровую экосистему.</p>
+      </div>
+
+      <div class="roadmap__list">
+          <div class="roadmap__step reveal">
+              <div class="step__number">01</div>
+              <div class="step__content">
+                  <h3 class="step__title">Глубокий аудит и аналитика</h3>
+                  <p class="step__text">Оцениваем перспективы проекта и выявляем скрытые точки роста на базе инноваций. Подключение занимает всего 2 минуты.</p>
+                  <span class="step__badge">Быстрый старт</span>
+              </div>
+          </div>
+
+          <div class="roadmap__step reveal">
+              <div class="step__number">02</div>
+              <div class="step__content">
+                  <h3 class="step__title">Внедрение AI-инструментов</h3>
+                  <p class="step__text">Интегрируем передовую цифровую инфраструктуру, которая берет на себя рутинные задачи и оптимизирует процессы.</p>
+                  <span class="step__badge">Автоматизация</span>
+              </div>
+          </div>
+
+          <div class="roadmap__step reveal">
+              <div class="step__number">03</div>
+              <div class="step__content">
+                  <h3 class="step__title">Запуск стратегии роста</h3>
+                  <p class="step__text">Воплощаем мечты в реальность, используя методологии, доказавшие свою эффективность в странах ЕС.</p>
+                  <span class="step__badge">Масштабирование</span>
+              </div>
+          </div>
+
+          <div class="roadmap__step reveal">
+              <div class="step__number">04</div>
+              <div class="step__content">
+                  <h3 class="step__title">Пассивный доход и мониторинг</h3>
+                  <p class="step__text">Стабильная работа системы под экспертной поддержкой на всех этапах. Получайте результат, пока мы заботимся о деталях.</p>
+                  <span class="step__badge">Финальный этап</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="contacts" id="contact">
+  <div class="container">
+      <div class="contacts__grid">
+          <div class="contacts__info reveal">
+              <span class="section-tagline">Свяжитесь с нами</span>
+              <h2 class="section-title">Бесплатная консультация по всем вопросам</h2>
+              <p class="contacts__text">
+                  Начните трансформацию вашего бизнеса уже сегодня. Наши эксперты готовы предоставить детали и открыть для вас новые возможности европейского рынка.
+              </p>
+
+              <div class="contacts__details">
+                  <div class="detail-item">
+                      <i data-lucide="mail"></i>
+                      <div>
+                          <span>Пишите нам</span>
+                          <p>team@prime-lane.blog</p>
+                      </div>
+                  </div>
+                  <div class="detail-item">
+                      <i data-lucide="map-pin"></i>
+                      <div>
+                          <span>Наш офис</span>
+                          <p>25 Rue de Ponthieu, 75008 Paris, France</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="contacts__form-wrapper reveal">
+              <form id="consultation-form" class="form">
+                  <div class="form__group">
+                      <input type="text" id="name" name="name" class="form__input" placeholder="Ваше имя" required>
+                  </div>
+
+                  <div class="form__group">
+                      <input type="email" id="email" name="email" class="form__input" placeholder="Email" required>
+                  </div>
+
+                  <div class="form__group">
+                      <input type="tel" id="phone" name="phone" class="form__input" placeholder="Телефон (только цифры)" pattern="\d*" inputmode="numeric" required>
+                  </div>
+
+                  <div class="form__captcha">
+                      <label for="captcha" class="captcha__label">Подтвердите, что вы не робот: <span id="captcha-question">5 + 3 = ?</span></label>
+                      <input type="text" id="captcha" class="form__input" placeholder="Ответ" required>
+                  </div>
+
+                  <div class="form__agreement">
+                      <input type="checkbox" id="agree" required>
+                      <label for="agree">Я согласен с <a href="./personal-data-policy.html">политикой обработки данных</a></label>
+                  </div>
+
+                  <button type="submit" class="btn btn--primary form__submit">Запросить доступ</button>
+
+                  <div id="form-success" class="form__message success">
+                      <i data-lucide="check-circle"></i>
+                      Ваша заявка успешно отправлена!
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+</section>
     </main>
 
     <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+  <div class="container footer__grid">
+      <div class="footer__brand">
+          <a href="/" class="logo footer__logo">
+              Prime<span>Lane</span>
+          </a>
+          <p class="footer__description">
+              Инновационная цифровая инфраструктура для масштабирования вашего бизнеса на европейском рынке.
+          </p>
+          <div class="footer__socials">
+              </div>
+      </div>
+
+      <div class="footer__nav">
+          <h4 class="footer__title">Навигация</h4>
+          <ul class="footer__list">
+              <li><a href="#" class="footer__link">Главная</a></li>
+              <li><a href="#strategy" class="footer__link">Стратегия</a></li>
+              <li><a href="#analytics" class="footer__link">Аналитика</a></li>
+              <li><a href="#expertise" class="footer__link">Экспертиза</a></li>
+              <li><a href="#blog" class="footer__link">Блог</a></li>
+          </ul>
+      </div>
+
+      <div class="footer__legal">
+          <h4 class="footer__title">Юридическая информация</h4>
+          <ul class="footer__list">
+              <li><a href="privacy.html" class="footer__link">Privacy Policy</a></li>
+              <li><a href="cookies.html" class="footer__link">Cookies Policy</a></li>
+              <li><a href="terms.html" class="footer__link">Terms of Service</a></li>
+              <li><a href="return.html" class="footer__link">Return Policy</a></li>
+              <li><a href="disclaimer.html" class="footer__link">Disclaimer</a></li>
+              <li><a href="personal-data-policy.html" class="footer__link">Personal Data</a></li>
+          </ul>
+      </div>
+
+      <div class="footer__contacts">
+          <h4 class="footer__title">Контакты</h4>
+          <div class="contact-item">
+              <i data-lucide="map-pin"></i>
+              <span>25 Rue de Ponthieu, 75008 Paris, France</span>
+          </div>
+          <div class="contact-item">
+              <i data-lucide="phone"></i>
+              <a href="tel:+33142615746">+33 1 42 61 57 46</a>
+          </div>
+          <div class="contact-item">
+              <i data-lucide="mail"></i>
+              <a href="mailto:hello@prime-lane.blog">hello@prime-lane.blog</a>
+          </div>
+      </div>
+  </div>
+  <div class="footer__bottom container">
+      <p>&copy; 2026 Prime-Lane. All rights reserved.</p>
   </div>
 </footer>
-
-
+    <div class="cookie-popup" id="cookie-popup">
+      <div class="cookie-popup__container">
+          <p class="cookie-popup__text">
+              Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.html">Cookie политике</a>.
+          </p>
+          <button class="btn btn--primary btn--small" id="accept-cookies">Принять</button>
+      </div>
+  </div>
   </body>
 </html>
